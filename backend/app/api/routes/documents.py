@@ -192,7 +192,7 @@ async def process_document(
         0,
     )
 
-    if page_count > 3:
+    if page_count is not None and page_count > 3:
 
         raise HTTPException(
             status_code=400,
