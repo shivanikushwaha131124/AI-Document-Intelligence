@@ -507,16 +507,24 @@ Example successful response:
   }
 }
 20. Deployment
+
 Frontend
-TODO: Add deployed frontend URL
+https://ai-document-intelligence-g2cn.onrender.com/
+
 Backend
-TODO: Add deployed backend URL
-Swagger
-TODO: Add deployed Swagger URL
+https://ai-document-intelligence-g2cn.onrender.com
+
+Swagger / OpenAPI
+https://ai-document-intelligence-g2cn.onrender.com/docs
+
+Health Check
+https://ai-document-intelligence-g2cn.onrender.com/api/v1/health
+
+Deployment Platform
+Render (Free)
+
 GitHub
 https://github.com/shivanikushwaha131124/AI-Document-Intelligence
-
-The deployment URLs will be added after final deployment.
 
 21. Limitations
 OCR accuracy depends on scan quality, image resolution, and document layout.
