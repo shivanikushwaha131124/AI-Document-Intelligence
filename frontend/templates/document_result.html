@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document Result - AI Document Intelligence</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/css/style.css"
+    >
+</head>
+
+<body>
+
+<div class="container">
+
+    <header class="header">
+
+        <div>
+            <h1>Document Result</h1>
+            <p id="documentTitle">
+                Loading document...
+            </p>
+        </div>
+
+        <button
+            class="secondary-button"
+            onclick="goToDashboard()"
+        >
+            ← Dashboard
+        </button>
+
+    </header>
+
+
+    <!-- Processing Summary -->
+
+    <section class="card">
+
+        <h2>Processing Summary</h2>
+
+        <div class="result-grid">
+
+            <div class="result-item">
+                <span>Document Name</span>
+                <strong id="resultName">-</strong>
+            </div>
+
+            <div class="result-item">
+                <span>Document Type</span>
+                <strong id="resultType">-</strong>
+            </div>
+
+            <div class="result-item">
+                <span>Processing Status</span>
+                <strong id="resultStatus">-</strong>
+            </div>
+
+            <div class="result-item">
+                <span>File Type</span>
+                <strong id="resultFileType">-</strong>
+            </div>
+
+            <div class="result-item">
+                <span>Pages</span>
+                <strong id="resultPages">-</strong>
+            </div>
+
+            <div class="result-item">
+                <span>OCR Used</span>
+                <strong id="resultOCR">-</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Validation -->
+
+    <section class="card">
+
+        <div class="section-header">
+
+            <div>
+                <h2>Financial Validation</h2>
+                <p>
+                    Reconciliation checks performed on extracted data
+                </p>
+            </div>
+
+            <div id="overallValidation">
+                -
+            </div>
+
+        </div>
+
+
+        <div id="validationContainer">
+
+            Loading validation...
+
+        </div>
+
+    </section>
+
+
+    <!-- Extracted Fields -->
+
+    <section class="card">
+
+        <h2>Extracted Fields</h2>
+
+        <div id="fieldsContainer">
+
+            Loading extracted fields...
+
+        </div>
+
+    </section>
+
+
+    <!-- Tables -->
+
+    <section class="card">
+
+        <h2>Extracted Tables & Line Items</h2>
+
+        <div id="tablesContainer">
+
+            Loading tables...
+
+        </div>
+
+    </section>
+
+
+    <!-- Metadata -->
+
+    <section class="card">
+
+        <h2>Processing Metadata</h2>
+
+        <pre
+            id="metadataContainer"
+            class="json-box"
+        ></pre>
+
+    </section>
+
+
+    <!-- Raw JSON -->
+
+    <section class="card">
+
+        <div class="section-header">
+
+            <div>
+                <h2>Raw JSON</h2>
+                <p>
+                    Complete API response
+                </p>
+            </div>
+
+            <button
+                class="secondary-button"
+                onclick="copyRawJSON()"
+            >
+                Copy JSON
+            </button>
+
+        </div>
+
+        <pre
+            id="rawJSON"
+            class="json-box"
+        ></pre>
+
+    </section>
+
+</div>
+
+
+<script src="/static/js/app.js"></script>
+
+</body>
+
+</html>
